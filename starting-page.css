@@ -1,0 +1,85 @@
+body {
+    background-image: url('anime-landscape-for-desktop-sea-ships-colorful-clouds-scenic-tree-horizon-wallpaper.jpg');
+    background-size: cover;
+}
+
+.intro-container {
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: 4px 4px 8px #000000;
+}
+
+body h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 2px solid;
+    font-size: 2rem;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+
+body {
+    background-image: url('phone-wallpaper.jpg');
+    background-size: cover;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.intro-container {
+    margin-top: 80px;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+body h1 {
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 2px solid;
+    font-size: 1.5rem;
+    transition: 0.4s;
+}
+
+}

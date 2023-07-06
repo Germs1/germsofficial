@@ -1,0 +1,1061 @@
+    /* ############################################## */
+    /*                    Global                      */
+    /* ############################################## */
+
+* {
+	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+html {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #FEFEFE;
+}
+
+a {
+	color: #FF0042;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    color: #ffffff;
+	font-size: 50px;
+	font-weight: bolder;
+    text-align: center;
+    font-family: aquire;
+}
+
+@font-face {
+    font-family:aquire;
+    src:url(aquire.otf);
+}
+
+footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    justify-content: center;
+}
+
+.Social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa {
+    margin: 20px 20px;
+    color: #ffffff;
+}
+
+.Social-icon {
+    font-size: 42px;
+}
+
+footer center {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.toggle-up {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+    font-size: 64px;
+    z-index: 2;
+}
+
+.toggle-up a{
+    color: #ffffff;
+}
+
+.toggle-up:hover {
+    opacity: 0.5;
+}
+
+
+@font-face {
+    font-family:aquire;
+    src:url(aquire.otf);
+}
+
+
+    /* ####################################################### */
+    /*                      Ragnarok.html                      */
+    /* ####################################################### */
+
+
+        /* ########## Navbar Styles ########## */
+
+
+.navbar-ragnarok {
+    display:flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-ragnarok {
+    width: 100%;
+    display: inline;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+}
+
+.Rnav-list{
+    list-style-type:none;
+    overflow: hidden;
+}
+
+.Rnav-item a{
+    float: left;
+    display:block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 24px;
+    padding: 20px;
+    color:#ffffff;
+    transition: 0.4s;
+}
+
+.Rnav-item a:hover{
+    border-radius: 10px;
+    background-color: rgb(0,0,0,0.1);
+    color: #000000;
+}
+
+.ragnarok-background {
+    background-image: url('clouds.jpg');
+    background-size: cover;
+}
+
+.img2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+        /* ########## Video Background Styles ########## */
+
+
+#myVideo {
+  object-fit: cover;
+  position: relative;
+  width: 1376px;
+  height: 620px;
+  overflow: hidden;
+  display: block;
+  margin-left: -10px;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.R-logo {
+  display: flex;
+  position:absolute;
+  top: 100px;
+  left:400px;
+  width:600px;
+  height:500px;
+  z-index: 1  ;
+}
+
+          /* #################### Ragnarok Maps #################### */
+
+.map-position {
+    position: absolute;
+    font-size: 36px;
+    margin-top: 200px;
+    padding: 40px;
+}
+
+.Ragnarok-Maps {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ragnarok-maps {
+    display: flex;
+    position: relative;
+    width: 400px;
+}
+
+.R-maps {
+    display: block;
+    width: 100%;
+    border-radius: 27px;
+    margin-top: -30%;
+}
+
+.R_maps-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 173%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 27px;
+    margin-top: -30%;
+}
+
+.R_maps-content>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.R_maps-content:hover {
+    opacity: 1;
+}
+
+.R_maps-content:hover>* {
+    transform: translateY(0);
+}
+
+.R_maps-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.R_maps-description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    text-align: center;
+}
+
+          /* #################### Ragnarok Classes Section #################### */
+
+#class {
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 50px;
+}
+
+.R-class-section {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('galaxy.jpg');
+    background-size: cover;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.Ragnarok-Class {
+    display: inline;
+    position: relative;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ragnarok-classes {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+        
+.ragnarok-classes .R-class {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 27px;
+    margin-top: 30px;
+}
+        
+.R_class-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125%;
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 27px;
+    margin-top: -7%;
+    z-index: 1;
+}
+        
+.R_class-content>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+        
+.R_class-content:hover {
+    opacity: 1;
+}
+        
+.R_class-content:hover>* {
+    transform: translateY(0);
+}
+        
+.R_class-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+          /* #################### SlideShow Section #################### */
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Slideshow Image Content */
+
+#myImg1,
+#myImg2,
+#myImg3,
+#myImg4 {
+    margin-top: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#myImg1:hover {
+    opacity: 0.8;
+}
+
+#myImg2:hover {
+    opacity: 0.8;
+}
+
+#myImg3:hover {
+    opacity: 0.8;
+}
+
+#myImg4:hover {
+    opacity: 0.8;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  margin-left: 11%;
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 56px;
+  transition: 0.6s ease;
+  border-radius: 32px;
+  user-select: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 11%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* Caption text */
+.Names {
+  color: #ff05f0;
+  font-size: 40px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.titles {
+    color: rgba(36, 36, 36, 0.7);
+    font-size: 28px;
+    padding: 8px 12px;
+    margin-top: -15px;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+          /* #################### Pop-up Styles #################### */
+
+.mySlides {
+    text-align: center;
+}
+
+.Responsive-names {
+    visibility: hidden;
+}
+
+.Responsive-titles {
+    visibility: hidden;
+}
+
+.Responsive-Description p{
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+}
+
+.popup1,
+.popup2,
+.popup3,
+.popup4 {
+  display: flex;
+  position:fixed;
+  top:-150vh;
+  left:0px;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  transition:top 0ms ease-in-out 300ms;
+  z-index: 1;
+}
+.popup1.active,
+.popup2.active,
+.popup3.active,
+.popup4.active {
+  transition:top 0ms ease-in-out;
+  top:0vh;
+}
+.popup1 .popup-container1,
+.popup2 .popup-container2,
+.popup3 .popup-container3,
+.popup4 .popup-container4 {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(1.2);
+  width:1000px;
+  padding:30px 20px 20px;
+  background-image: url('clouds.jpg');
+  opacity:0.5;
+  transition:all 300ms ease-in-out;
+  border-radius: 32px;
+}
+.popup1.active .popup-container1,
+.popup2.active .popup-container2,
+.popup3.active .popup-container3,
+.popup4.active .popup-container4 {
+  opacity:1;
+  transform:translate(-50%,-50%) scale(1);
+}
+.popup1 .popup-container1 .popup-close,
+.popup2 .popup-container2 .popup-close,
+.popup3 .popup-container3 .popup-close,
+.popup4 .popup-container4 .popup-close {
+  position:absolute;
+  top:20px;
+  right:20px;
+  width:30px;
+  height:30px;
+  text-align:center;
+  line-height:30px;
+  background-color: transparent;
+  color:#ff05f0;
+  border-radius:50%;
+  font-size:42px;
+  font-weight:400;
+  cursor:pointer;
+  text-shadow: 1px 1px 3px #000000;
+}
+
+.popup1 .popup-container1 .popup-info,
+.popup2 .popup-container2 .popup-info,
+.popup3 .popup-container3 .popup-info,
+.popup4 .popup-container4 .popup-info{
+    display: flex;
+}
+
+.popup-container1 .symbol1,
+.popup-container2 .symbol2,
+.popup-container3 .symbol3,
+.popup-container4 .symbol4 {
+    position: absolute;
+    margin-left: 70.3%;
+    margin-top: -20px;
+}
+
+.popup-info h1 {
+    position: absolute; 
+    margin-top: 35px;
+    right: 21%;
+    font-size: 36px;
+}
+
+.popup-info h2 {
+    position: absolute; 
+    margin-top: 35px;
+    right: 11%;
+    font-size: 36px;
+}
+
+.popup-info h3 {
+    position: absolute; 
+    margin-top: 35px;
+    right: 11%;
+    font-size: 36px;
+}
+
+.popup-info h4 {
+    position: absolute; 
+    margin-top: 35px;
+    right: 19%;
+    font-size: 36px;
+}
+
+.popup-info .First-title {
+    position: absolute;
+    top: 20%;
+    right: 16%;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.popup-info .Second-title {
+    position: absolute;
+    top: 20%;
+    right: 12.5%;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.popup-info .Third-title {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.popup-info .Fourth-title {
+    position: absolute;
+    top: 20%;
+    right: 8%;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.popup-info .stats-img {
+    margin-top: 130px;
+    margin-left: 135px;
+}
+
+.popup-info .hero-img {
+    margin-left: -40px;
+}
+
+.popup-container1 .descriptions,
+.popup-container2 .descriptions,
+.popup-container3 .descriptions,
+.popup-container4 .descriptions {
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bolder;
+    margin-top: -65px;
+    margin-left: 50%;
+}
+
+          /* #################### Costume Gallery  #################### */
+        
+.costume-row {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('wood-background.png');
+    background-size: cover;
+    padding: 40px;
+    border-radius: 30px;
+}
+          
+          /* Create four equal columns that sits next to each other */
+.costume-column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.costume-column h1 {
+    color: rgba(0,0,0,0.9);
+    font-family: sans-serif;
+    font-size: 22px;
+}
+          
+.costume-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
+}
+          
+          /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .costume-column {
+        flex: 50%;
+        max-width: 50%;
+}
+}
+          
+          /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .costume-column {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        flex: 75%;
+        max-width: 100%;
+}
+.costume-row {
+    background-size: auto;
+}
+}
+          /* ################################################################## */
+
+          /* #################### Responsive Ragnarok.html #################### */
+
+          /* ################################################################## */
+
+
+@media screen and (max-width: 1024px) {
+
+
+h1 {
+    font-size: 28px;
+}
+
+    /* #################### Navbar Styles #################### */
+
+.navbar-ragnarok {
+    display:flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-ragnarok {
+    object-fit: cover;
+    background-image: linear-gradient( rgba(255, 0, 0, 0.6), skyblue);
+    width: 100%;
+    display: inline;
+}
+
+.Rnav-list{
+    list-style-type:none;
+    overflow: hidden;
+}
+
+.Rnav-item a{
+    display:block;
+    text-align: center;
+    margin-inline: 13.25px;
+    font-size: 16px;
+    padding: 2.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:#fff;
+}
+
+.Rnav-item a:hover{
+    background-color: rgb(0,0,0,0.1);
+}
+
+    /* #################### Video Background Styles #################### */
+
+.R-logo {
+  display: flex;
+  position:absolute;
+  top: 65px;
+  left:70px;
+  width:250px;
+  height:170px;
+  z-index: 1  ;
+}
+
+#myVideo {
+  object-fit: cover;
+  position: relative;
+  width: 102.7%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+video {
+    position: absolute;
+    top: 0;
+}
+
+    /* #################### Ragnarok Maps Styles #################### */
+
+.map-position {
+    position: absolute;
+    font-size: 36px;
+    margin-top: 200px;
+    padding: 20px;
+}
+
+.Ragnarok-Maps {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ragnarok-maps {
+    display: flex;
+    position: relative;
+    width: 400px;
+}
+
+.R-maps {
+    width: 102%;
+    border-radius: 10px;
+}
+
+.R_maps-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102%;
+    height: 171%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 10px;
+    margin-top: -30%;
+}
+
+.R_maps-content>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.R_maps-content:hover {
+    opacity: 1;
+}
+
+.R_maps-content:hover>* {
+    transform: translateY(0);
+}
+
+.R_maps-title {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.R_maps-description {
+    display: none;
+    visibility: hidden;
+}
+
+    /* #################### Ragnarok Classes Styles #################### */
+
+    #class {
+        padding: 10px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        font-size: 32px;
+    }
+    
+    .R-class-section {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('galaxy.jpg');
+        background-size: cover;
+        border-radius: 30px;
+        width: 99%;
+    }
+    
+    .Ragnarok-Class {
+        display: flex;
+        position: relative;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+            
+    .ragnarok-classes {
+        align-items: center;
+        position: relative;
+        width: 400px;
+    }
+            
+    .ragnarok-classes .R-class {
+        align-items: center;
+        justify-content: space-between;
+        width: 110%;
+        border-radius: 27px;
+        margin-top: -5%;
+    }
+            
+    .R_class-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 113%;
+        background: rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+        border-radius: 27px;
+        margin-top: -5%;
+        z-index: 1;
+    }
+            
+    .R_class-content>* {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+            
+    .R_class-content:hover {
+        opacity: 1 ;
+    }
+            
+    .R_class-content:hover>* {
+        transform: translateY(0);
+    }
+            
+    .R_class-title {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    /* #################### Button Styles #################### */
+
+
+/* Next & previous buttons */
+.prev, .next {
+  margin-left: 1px;
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 56px;
+  transition: 0.6s ease;
+  border-radius: 32px;
+  user-select: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 1px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.dot {
+    visibility: hidden;
+}
+
+    /* #################### Popup Styles #################### */
+
+.mySlides {
+    text-align: center;
+}
+
+.Responsive-names,
+.Responsive-titles {
+    visibility: visible;
+}
+
+.Responsive-names {
+    color: #ff05f0;
+    font-size: 40px;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+  .Responsive-titles {
+      color: rgba(36, 36, 36, 0.7);
+      font-size: 28px;
+      padding: 8px 12px;
+      margin-top: -15px;
+      width: 100%;
+      text-align: center;
+      font-weight: bolder;
+  }
+
+.mySlides .Names,
+.mySlides .titles {
+    visibility: hidden;
+}
+
+.Responsive-Description p{
+    visibility: visible;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 75%;
+    left: 50%;
+    width: 100%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+}
+
+.Img-description p{
+    background-color: #000000;
+    text-align: center;
+    font-size: 32px;
+    margin-top: -150px;
+    z-index: 1;
+}
+
+#myImg1,
+#myImg2,
+#myImg3,
+#myImg4 {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: 0.1s;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.popup1,
+.popup2,
+.popup3,
+.popup4 {
+  visibility: hidden;
+  position:fixed;
+  top:-150vh;
+  left:0px;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  transition:top 0ms ease-in-out 300ms;
+  z-index: 1;
+}
+
+footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+
+.Social-icon {
+    font-size: 20px;
+}
+
+.toggle-up {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+    font-size: 50px;
+    z-index: 2;
+}
+}
